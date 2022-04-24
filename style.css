@@ -98,11 +98,11 @@ h2 {
 }
 
 .project-card--left .project-card__information {
-  text-align: left;
+  border-right: 2px solid rgba(41, 173, 255, 0.5);
 }
 
 .project-card--right .project-card__information {
-  text-align: right;
+  border-left: 2px solid rgba(41, 173, 255, 0.5);
 }
 
 .project-card__information {
@@ -158,18 +158,37 @@ h2 {
 }
 
 .image-uploader {
-  background: url('./images/image-uploader.png') no-repeat center;
+  background: url('./media/image-uploader.png') no-repeat center;
   background-size: cover;
 }
 
 .my-unsplash {
-  background: url('./images/unsplash.png') no-repeat center;
+  background: url('./media/unsplash.png') no-repeat center;
   background-size: cover;
 }
 
 .cat-wiki {
-  background: url('./images/catwiki.png') no-repeat center;
+  background: url('./media/catwiki.png') no-repeat center;
   background-size: cover;
+}
+
+#expandToggle {
+  margin: 3vh 0;
+  text-align: center;
+}
+
+#expandToggle:hover {
+  cursor: pointer;
+}
+
+.contact-link {
+  display: block;
+  text-decoration: underline;
+  margin: 3vh 0;
+}
+
+.contact-link:hover {
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -179,6 +198,27 @@ h2 {
 
   body {
     background-color: #333;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  * {
+    color: black;
+  }
+
+  body {
+    background-color: #ddd;
+  }
+
+  .project-card {
+    background-color: #fff;
+  }
+
+  #projects:after {
+    background: linear-gradient(to top,
+     rgba(221,221,221, 1) 0%, 
+     rgba(6,6,6, 0) 10%
+    );
   }
 }
 

@@ -20,7 +20,7 @@
   <body>
     <nav>
       <div>RR</div>
-      <div>Hamburger menu?</div>
+      <div></div>
     </nav>
     <div class="container">
       <!-- Intro / About me -->
@@ -78,7 +78,7 @@
         </div>
 
         <!-- Second Project -->
-        <div class="project-card project-card--left">
+        <div class="project-card project-card--right">
           <div class="project-card__image-container my-unsplash"></div>
           <div class="project-card__information">
             <div class="project-card__header">
@@ -150,16 +150,29 @@
           <div class="project-card__image-container cat-wiki"></div>
         </div>
       </section>
-      <div id="expandToggle">Expand</div>
+      <div id="expandToggle">
+        <i class="fas fa-chevron-down fa-3x"></i>
+      </div>
 
       <hr />
 
-      <!-- Contact (WIP) -->
+      <!-- Contact -->
       <section>
         <h2>Contact Me</h2>
-        <div>Email</div>
-        <div>LinkedIn</div>
-        <div>Resume</div>
+        <a
+          class="contact-link"
+          href="mailto: ryanroemer61@gmail.com?subject=Email from website"
+          >Email</a
+        >
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/ryan-roemer/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a class="contact-link" href="./media/Resume.pdf" target="_blank"
+          >Resume</a
+        >
       </section>
     </div>
     <script src="./app.js" />
