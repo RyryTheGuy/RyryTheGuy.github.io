@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Roemer - Junior Web Developer</title>
-
+    <script
+      src="https://kit.fontawesome.com/65fd9b8384.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <title>Ryan Roemer - Junior Web Developer</title>
   </head>
   <body>
     <nav>
@@ -32,13 +35,29 @@
       <hr />
 
       <!-- Work / Github projects -->
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
 
         <!-- First Project -->
         <div class="project-card project-card--left">
           <div class="project-card__information">
-            <h3>Image Uploader</h3>
+            <div class="project-card__header">
+              <h3>Image Uploader</h3>
+              <div>
+                <a
+                  href="https://devchallenge-image-uploader.herokuapp.com"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+                <a
+                  href="https://github.com/RyryTheGuy/image-uploader"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
             <p>
               An image uploader made with React using Firebase. <br /><br />
               My first non-tutorial project using Typescript, React, and NodeJS.
@@ -55,38 +74,44 @@
               <span class="tag">Typescript</span>
             </div>
           </div>
-          <div class="project-card__image-container image-uploader">
-            <!-- <div class="button-container">
-              <button class="primary-btn">See Demo</button>
-              <button class="secondary-btn">View Code</button>
-            </div> -->
-          </div>
+          <div class="project-card__image-container image-uploader"></div>
         </div>
 
         <!-- Second Project -->
-        <div class="project-card project-card--right">
-          <div class="project-card__image-container">
-            <div class="button-container">
-              <button class="primary-btn">See Demo</button>
-              <button class="secondary-btn">View Code</button>
-            </div>
-          </div>
+        <div class="project-card project-card--left">
+          <div class="project-card__image-container my-unsplash"></div>
           <div class="project-card__information">
-            <h3>Image Uploader</h3>
+            <div class="project-card__header">
+              <div>
+                <a
+                  href="https://github.com/RyryTheGuy/my-unsplash-backend"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://devchallenge-my-unsplash.herokuapp.com"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+              <h3>Unsplash Clone</h3>
+            </div>
             <p>
-              An image uploader made with React using Firebase. <br /><br />
-              My first non-tutorial project using Typescript, React, and NodeJS.
-              It's a very simple image uploading web app that uploads images to
-              Firebase Storage. Adding functionality of storing that image on
-              Firebase added slightly more complexity, but was a great learning
-              experience overall.
+              Unsplash clone made using the MERN stack. <br /><br />
+              This project I focused on creating better components and having
+              solid data validation when needed. I also incorporated TailwindCSS
+              which gave me the opportunity to learn how to use Webpack better
+              and reduce the size of my JS file.
             </p>
             <div class="project-tags">
               Made using:
               <span class="tag">React</span>
               <span class="tag">Express</span>
-              <span class="tag">Firebase</span>
+              <span class="tag">MongoDB</span>
               <span class="tag">Typescript</span>
+              <span class="tag">TailwindCSS</span>
             </div>
           </div>
         </div>
@@ -94,31 +119,38 @@
         <!-- Third Project -->
         <div class="project-card project-card--left">
           <div class="project-card__information">
-            <h3>Image Uploader</h3>
+            <div class="project-card__header">
+              <h3>Cat Wiki</h3>
+              <div>
+                <a
+                  href="https://devchallenge-catwiki.herokuapp.com"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+                <a href="https://github.com/RyryTheGuy/catwiki" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
             <p>
-              An image uploader made with React using Firebase. <br /><br />
-              My first non-tutorial project using Typescript, React, and NodeJS.
-              It's a very simple image uploading web app that uploads images to
-              Firebase Storage. Adding functionality of storing that image on
-              Firebase added slightly more complexity, but was a great learning
-              experience overall.
+              A cat wikipedia website created with NextJS. <br /><br />
+              This project was pretty fun to create as I was able to use and
+              learn NextJS for the first time. I used modular css this project
+              (instead of Bootstrap or Tailwind) which allowed me to learn BEM,
+              Block Element Modifier, for faster development.
             </p>
             <div class="project-tags">
               Made using:
               <span class="tag">React</span>
-              <span class="tag">Express</span>
-              <span class="tag">Firebase</span>
-              <span class="tag">Typescript</span>
+              <span class="tag">NextJS</span>
+              <span class="tag">Modular CSS</span>
             </div>
           </div>
-          <div class="project-card__image-container">
-            <div class="button-container">
-              <button class="primary-btn">See Demo</button>
-              <button class="secondary-btn">View Code</button>
-            </div>
-          </div>
+          <div class="project-card__image-container cat-wiki"></div>
         </div>
       </section>
+      <div id="expandToggle">Expand</div>
 
       <hr />
 
