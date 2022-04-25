@@ -1,6 +1,5 @@
 const projectSection = document.getElementById('projects');
 const expandIcon = document.getElementById('expandToggle').children.item(0);
-console.log('Icon', expandIcon);
 
 projectSection.style.setProperty('--originalHeight', `${projectSection.scrollHeight}px`);
 
