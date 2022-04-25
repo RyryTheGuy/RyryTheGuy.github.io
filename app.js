@@ -5,6 +5,10 @@ projectSection.style.setProperty('--originalHeight', `${projectSection.scrollHei
 
 document.getElementById('expandToggle').addEventListener('click', function () {
   projectSection.classList.toggle('expand');
-  expandIcon.classList.toggle('fa-chevron-up');  
-  expandIcon.classList.toggle('fa-chevron-down');  
-})
+  expandIcon.classList.toggle('fa-chevron-up');
+  expandIcon.classList.toggle('fa-chevron-down'); 
+});
+
+window.addEventListener('resize', function () {
+  projectSection.style.setProperty('--originalHeight', `${projectSection.scrollHeight}px`);
+});
